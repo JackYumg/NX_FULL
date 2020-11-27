@@ -1,0 +1,25 @@
+## 查询接口
+type Query {
+  findUserById(id: ID!) : User
+}
+
+input IDInput{
+  id: ID
+}
+
+## 修改接口
+type Mutation {
+  insertUser(user: UserInput): User
+}
+
+input UserInput{
+  id: ID
+  name: String
+}
+
+## 基础类型定义
+type User {
+  id: ID!
+  name: String
+}
+

@@ -1,0 +1,10 @@
+type Query{
+    getApplications : [Application]
+}
+
+
+type Application{
+    id: ID!
+    appName: String
+    icon: String
+}
